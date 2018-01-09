@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Create a New Blog Post</h1>
+
+<p></p>
+<p></p>
+
+<form method="post">
+<table>
+<tbody>
+    <tr>
+    <td>
+        <label>Blog Tital</label>
+        <input name="blog_name" type="text" value="{{blog_name}}">
+        <span class="error">{{error_blog_name}}</span>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+        <label>Blog Body</label>
+        <input name="add_blog" type="text" value="{{add_blog}}">
+        <span class="error">{{error_blog_story}}</span>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <input type="submit" value="Add Entry">
+</form>
+
+{% endblock %}
